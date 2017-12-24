@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Poke</title>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/index.js"></script>
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+</head>
+<style>
+    *{
+    	margin: 0;
+    	padding: 0;
+    	list-style: none;
+    }
+    html,body{
+    	width: 100%;
+    	height: 100%;
+    }
+    body{
+    	overflow: hidden;
+    	background: url('img/desk2.jpg') no-repeat center/cover;
+    }
+	.desk{
+		width: 700px;
+		height: 600px;
+		/* background: hotpink; */
+		margin: 0 auto;
+		position: relative;
+	}
+	.poke{
+        width: 90px;
+        height: 140px;
+        position: absolute;
+        margin-right: 10px;
+        left: 300px;
+        top: 0;
+        background-position: center;
+        background-size: cover;
+        opacity: 0;
+        z-index: 0;
+	}
+    .active{
+        box-shadow: 0 0 0 5px hotpink;
+    }
+    .box{
+        width: 690px;
+        height: 140px;
+        background: #2d832e;
+        position: absolute;
+        left: 5px;
+        top: 460px;
+        opacity: 0.5;
+        box-sizing: border-box;
+        border: 1px solid #002C01;
+        border-radius: 3px;
+    }
+    .btnR{
+        width: 80px;
+        height: 50px;
+        background: #2e422e;
+        position: absolute;
+        bottom: 75px;
+        left: 310px;
+        color: #fff;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+        border-radius: 5px;
+        opacity: 0.8;
+    }
+    .btnL{
+        width: 80px;
+        height: 50px;
+        background: #2e422e;
+        position: absolute;
+        bottom: 15px;
+        left: 310px;
+        color: #fff;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+        border-radius: 5px;
+        opacity: 0.8;
+    }
+    .btnL:hover{
+        box-sizing: border-box;
+        background: #F41311;
+        opacity: 0.8;
+        border: 1px solid #fff;
+    }
+    .btnR:hover{
+        box-sizing: border-box;
+        background: #F41311;
+        opacity: 0.8;
+        border: 1px solid #fff;
+    }
+    .iconfont{
+        font-size: 36px;
+    }
+</style>
+<body>
+	<div class="desk">
+        <div class="box"></div>
+        <div class="btnR iconfont icon-icon07-copy"></div>
+		<div class="btnL iconfont icon-icon07"></div>
+	</div>
+</body>
+</html>
